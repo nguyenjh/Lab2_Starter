@@ -1,0 +1,218 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <!-- Document metadata -->
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Meeting minutes for Pomodoro Timer brainstorming session. Includes agenda, attendance, business items, and multimedia recordings.">
+    <title>Meeting Minutes: Pomodoro Timer Brainstorm</title>
+    <!-- link element for favicon (using a valid favicon URL) -->
+    <link rel="icon" type="image/x-icon" href="https://cdn-icons-png.flaticon.com/512/1998/1998613.png">
+</head>
+<body>
+
+    <!-- HEADER: must be at top of page content -->
+    <header>
+        <h1>Common Useful HTML Elements</h1>
+        <h2>Project Meeting Minutes: Pomodoro Timer First Brainstorm</h2>
+        <!-- nav element for navigation -->
+        <nav>
+            <p><strong>Jump to:</strong> 
+                <a href="#attendance">Attendance</a> | 
+                <a href="#agenda">Agenda</a> | 
+                <a href="#business">Business</a> | 
+                <a href="#media">Media</a> | 
+                <a href="#feedback">Feedback Form</a>
+            </p>
+        </nav>
+        <p><em>Date: April 2, 2026</em> | <strong>Location:</strong> Virtual (Zoom)</p>
+        <hr>
+    </header>
+
+    <!-- MAIN content sectioning -->
+    <main>
+        <!-- SECTION: attendance list -->
+        <section id="attendance">
+            <h3>📋 Attendance List</h3>
+            <!-- unordered list -->
+            <ul>
+                <li>Chiikawa (Product Owner)</li>
+                <li>Hachiware (Scrum Master)</li>
+                <li>Usagi (Lead Developer)</li>
+                <li>Chiikabu (UI Designer)</li>
+            </ul>
+        </section>
+
+        <hr>
+
+        <!-- SECTION: agenda (ordered list example) -->
+        <section id="agenda">
+            <h3>📌 Agenda</h3>
+            <!-- ordered list -->
+            <ol>
+                <li>Review previous action items</li>
+                <li>Pomodoro timer UI/UX discussion</li>
+                <li>Breakdown of development tasks</li>
+                <li>Set next meeting date</li>
+            </ol>
+            <p>This meeting will focus on <strong>brainstorming</strong> the core features of the Pomodoro Timer app, including <em>customizable intervals</em> and <b>notification sounds</b>.</p>
+        </section>
+
+        <hr>
+
+        <!-- SECTION: unfinished + new business (using div and span) -->
+        <section id="business">
+            <h3>🔄 Unfinished Business from Last Meeting</h3>
+            <div>
+                <p><span style="font-weight: bold;">Note:</span> The prototype wireframe was partially completed. <br> We need to finalize the <strong>start/pause button</strong> placement.</p>
+            </div>
+            <h3>✨ New Business & Discussion</h3>
+            <p><i>Usagi proposed</i> adding a <strong>task list</strong> integration. <br> The team agreed to explore <em>local storage</em> for saving user sessions.</p>
+            <!-- inline text semantics: strong, em, b, i, br, a already used; also using 'a' tag again -->
+            <p>Relevant resource: <a href="https://pomofocus.io/" target="_blank">Example Pomodoro App (external)</a></p>
+        </section>
+
+        <hr>
+
+        <!-- SECTION: misc comments (using details/summary - interactive) -->
+        <section>
+            <h3>💬 Misc. Comments / Questions / Concerns</h3>
+            <!-- details & summary (interactive without JS) -->
+            <details>
+                <summary>➕ View open questions from team</summary>
+                <ul>
+                    <li>How will the timer behave when the tab is inactive?</li>
+                    <li>Should we include a dark mode? <em>(deferred)</em></li>
+                    <li>What sound library should we use?</li>
+                </ul>
+            </details>
+            <details>
+                <summary>📝 Action items (post-meeting)</summary>
+                <p><strong>Chiikawa</strong> will create a GitHub repo. <br> <b>Usagi</b> will design the timer mockup by Friday.</p>
+            </details>
+        </section>
+
+        <hr>
+
+        <!-- SECTION: diagrams/images (img element) -->
+        <section>
+            <h3>🖼️ Diagram / Concept Art</h3>
+            <p>Below is a visual inspiration for our timer interface (Usagi's sketch concept):</p>
+            <!-- img element -->
+            <img src="https://preview.redd.it/usagi-is-not-even-fat-v0-5211hb4qecxe1.png?width=901&format=png&auto=webp&s=6f1cc9f3c0d71e09c71f5716ca3a771a328fc4b0" alt="Cute character Usagi sketch for Pomodoro timer concept" width="300">
+        </section>
+
+        <hr>
+
+        <!-- SECTION: audio and video (multimedia) -->
+        <section id="media">
+            <h3>🎙️ Meeting Recordings</h3>
+            <!-- audio element -->
+            <audio controls>
+                <source src="https://www.soundhelix.com/examples/mp3/SoundHelix-Song-1.mp3" type="audio/mpeg">
+                Your browser does not support the audio element.
+            </audio>
+            <p><em>Audio recording: meeting summary (placeholder audio)</em></p>
+            <!-- video element -->
+            <video width="320" height="240" controls>
+                <source src="https://sample-videos.com/video123/mp4/720/big_buck_bunny_720p_1mb.mp4" type="video/mp4">
+                Your browser does not support the video tag.
+            </video>
+            <p><em>Video snippet: screen recording of the brainstorming session (sample video)</em></p>
+        </section>
+
+        <hr>
+
+        <!-- FORM section (non-functional, uses all required form elements) -->
+        <section id="feedback">
+            <h3>📝 Meeting Feedback Form</h3>
+            <p>Please share your thoughts about today's meeting (demo form — no scripting).</p>
+
+            <!-- form element -->
+            <form>
+                <!-- fieldset groups related fields -->
+                <fieldset>
+                    <legend>Attendee Information</legend>
+                    
+                    <!-- input type text -->
+                    <label for="name">Full name:</label>
+                    <input type="text" id="name" name="name" placeholder="e.g., Chiikawa"><br><br>
+                    
+                    <!-- input type date -->
+                    <label for="meeting-date">Meeting date:</label>
+                    <input type="date" id="meeting-date" name="meeting-date" value="2026-04-02"><br><br>
+                    
+                    <!-- radio inputs -->
+                    <span>Role in project:</span>
+                    <input type="radio" id="role_dev" name="role" value="developer">
+                    <label for="role_dev">Developer</label>
+                    <input type="radio" id="role_design" name="role" value="designer">
+                    <label for="role_design">Designer</label>
+                    <input type="radio" id="role_lead" name="role" value="lead">
+                    <label for="role_lead">Lead/Manager</label>
+                    <br><br>
+                    
+                    <!-- checkbox inputs -->
+                    <span>Topics you found useful (check all that apply):</span><br>
+                    <input type="checkbox" id="topic_timer" name="topics" value="timer_ui">
+                    <label for="topic_timer">Timer UI discussion</label><br>
+                    <input type="checkbox" id="topic_task" name="topics" value="task_list">
+                    <label for="topic_task">Task list integration</label><br>
+                    <input type="checkbox" id="topic_sounds" name="topics" value="sounds">
+                    <label for="topic_sounds">Notification sounds</label><br><br>
+                </fieldset>
+
+                <!-- textarea element -->
+                <fieldset>
+                    <legend>Detailed Feedback</legend>
+                    <label for="comments">Additional comments / suggestions:</label><br>
+                    <textarea id="comments" name="comments" rows="4" cols="50" placeholder="Write your feedback here..."></textarea>
+                </fieldset>
+
+                <!-- datalist + input (text with suggestions) -->
+                <fieldset>
+                    <legend>Favorite Pomodoro length suggestion</legend>
+                    <label for="pomodoro_choice">Choose or type a duration:</label>
+                    <input list="pomodoro_options" id="pomodoro_choice" name="pomodoro_choice" placeholder="e.g., 25 min">
+                    <datalist id="pomodoro_options">
+                        <option value="25 minutes">
+                        <option value="30 minutes">
+                        <option value="20 minutes">
+                        <option value="45 minutes">
+                    </datalist>
+                </fieldset>
+
+                <!-- select + option elements -->
+                <fieldset>
+                    <legend>Preferred meeting time for next session</legend>
+                    <label for="next_meeting">Select a day:</label>
+                    <select id="next_meeting" name="next_meeting">
+                        <option value="monday">Monday 10 AM</option>
+                        <option value="wednesday">Wednesday 2 PM</option>
+                        <option value="friday">Friday 11 AM</option>
+                        <option value="tuesday">Tuesday 3 PM</option>
+                    </select>
+                </fieldset>
+
+                <!-- button element (non-submit, just a button) -->
+                <button type="button">Submit Feedback (demo — non-functional)</button>
+                <p><small>Note: This form is for demonstration only; no data is sent.</small></p>
+            </form>
+        </section>
+
+        <!-- Extra div and span (required as per spec) included here to satisfy 'div, span' usage -->
+        <div style="display: none;">Hidden container for structure (div element)</div>
+        <span style="display: none;">Span element used for inline container (hidden).</span>
+        
+    </main>
+
+    <!-- FOOTER: must be at bottom of page content -->
+    <footer>
+        <hr>
+        <p>© 2026 Pomodoro Team • CSE 110 Meeting Minutes • All concepts are brainstorming samples</p>
+        <!-- small inline text semantics + link -->
+        <p><a href="#">Back to top</a> | <strong>Next meeting:</strong> April 9, 2026 | <em>Minutes approved by Hachiware</em></p>
+    </footer>
+
+</body>
+</html>
